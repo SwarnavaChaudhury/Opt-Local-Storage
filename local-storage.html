@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Local Storage </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="main">
+        <h1> Local Storage - Enquiry Form </h1>
+        <div class="enquiry-form">
+
+            <form>
+                <input type="text" name="userName" id="userName" placeholder="Enter Name">
+                <input type="email" name="userEmail" id="userEmail" placeholder="Enter Email">
+                <input type="tel" name="userPhone" id="userPhone" placeholder="Enter Phone">
+
+                <button id="saveEnquiryBtn">
+                    Save
+                </button>
+                <button type="reset" id="resetBtn">
+                    Reset
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    
+
+    <div class="enquiry-table">
+
+        <button id="clearAllBtn">
+            Clear All
+        </button>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody id="enquiryData">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
